@@ -13,6 +13,8 @@
 		0A2EC546246C8C9D001A418F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EC544246C8C9D001A418F /* Main.storyboard */; };
 		0A2EC548246C8C9E001A418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EC547246C8C9E001A418F /* Assets.xcassets */; };
 		0A2EC54B246C8C9E001A418F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EC549246C8C9E001A418F /* LaunchScreen.storyboard */; };
+		0A2EC553246C8EE1001A418F /* Improse Logo light bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EC552246C8EE1001A418F /* Improse Logo light bulb.png */; };
+		E596862E5C60613BEB774286 /* Pods_ImproseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A14095F5EBDFC3EA28D624 /* Pods_ImproseApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0A2EC547246C8C9E001A418F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A2EC54A246C8C9E001A418F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A2EC54C246C8C9E001A418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2EC552246C8EE1001A418F /* Improse Logo light bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Improse Logo light bulb.png"; sourceTree = "<group>"; };
+		23A14095F5EBDFC3EA28D624 /* Pods_ImproseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImproseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69AEAA61C0D18D12711C3331 /* Pods-ImproseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImproseApp.debug.xcconfig"; path = "Target Support Files/Pods-ImproseApp/Pods-ImproseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F4ACC4EA59D6EE78A15DAC29 /* Pods-ImproseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImproseApp.release.xcconfig"; path = "Target Support Files/Pods-ImproseApp/Pods-ImproseApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E596862E5C60613BEB774286 /* Pods_ImproseApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				0A2EC53D246C8C9D001A418F /* ImproseApp */,
 				0A2EC53C246C8C9D001A418F /* Products */,
+				9ABF6C2407B2086BE342F525 /* Pods */,
+				5531CE6119DCD3043C00B464 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,31 @@
 				0A2EC53E246C8C9D001A418F /* AppDelegate.swift */,
 				0A2EC540246C8C9D001A418F /* SceneDelegate.swift */,
 				0A2EC542246C8C9D001A418F /* ViewController.swift */,
+				0A2EC552246C8EE1001A418F /* Improse Logo light bulb.png */,
 				0A2EC544246C8C9D001A418F /* Main.storyboard */,
 				0A2EC547246C8C9E001A418F /* Assets.xcassets */,
 				0A2EC549246C8C9E001A418F /* LaunchScreen.storyboard */,
 				0A2EC54C246C8C9E001A418F /* Info.plist */,
 			);
 			path = ImproseApp;
+			sourceTree = "<group>";
+		};
+		5531CE6119DCD3043C00B464 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23A14095F5EBDFC3EA28D624 /* Pods_ImproseApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ABF6C2407B2086BE342F525 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69AEAA61C0D18D12711C3331 /* Pods-ImproseApp.debug.xcconfig */,
+				F4ACC4EA59D6EE78A15DAC29 /* Pods-ImproseApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A2EC54F246C8C9E001A418F /* Build configuration list for PBXNativeTarget "ImproseApp" */;
 			buildPhases = (
+				215190E50260255B9C790C2C /* [CP] Check Pods Manifest.lock */,
 				0A2EC537246C8C9D001A418F /* Sources */,
 				0A2EC538246C8C9D001A418F /* Frameworks */,
 				0A2EC539246C8C9D001A418F /* Resources */,
+				A63BA389D0F8CD3357CE18A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +158,53 @@
 				0A2EC54B246C8C9E001A418F /* LaunchScreen.storyboard in Resources */,
 				0A2EC548246C8C9E001A418F /* Assets.xcassets in Resources */,
 				0A2EC546246C8C9D001A418F /* Main.storyboard in Resources */,
+				0A2EC553246C8EE1001A418F /* Improse Logo light bulb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		215190E50260255B9C790C2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImproseApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A63BA389D0F8CD3357CE18A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImproseApp/Pods-ImproseApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImproseApp/Pods-ImproseApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImproseApp/Pods-ImproseApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A2EC537246C8C9D001A418F /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		0A2EC550246C8C9E001A418F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69AEAA61C0D18D12711C3331 /* Pods-ImproseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +373,7 @@
 		};
 		0A2EC551246C8C9E001A418F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4ACC4EA59D6EE78A15DAC29 /* Pods-ImproseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,76 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImproseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCG-ra-wJm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.50196078430000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGa-dV-zQX" userLabel="WorkingArea">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Improse Logo light bulb.png" translatesAutoresizingMaskIntoConstraints="NO" id="ODJ-67-JZt">
+                                        <rect key="frame" x="20" y="20" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="09K-y7-t8V"/>
+                                            <constraint firstAttribute="height" constant="150" id="Wcb-b5-Cew"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rose-Hulman Institute of Technology" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSD-3H-uQ1">
+                                        <rect key="frame" x="204" y="10" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="oEJ-MZ-2h2"/>
+                                            <constraint firstAttribute="width" constant="150" id="uS1-0o-IkF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgL-Xd-fgH">
+                                        <rect key="frame" x="117" y="369" width="140" height="40"/>
+                                        <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="6Do-Um-tDf"/>
+                                            <constraint firstAttribute="height" constant="40" id="XM3-I7-aYG"/>
+                                        </constraints>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ODJ-67-JZt" firstAttribute="leading" secondItem="yGa-dV-zQX" secondAttribute="leading" constant="20" id="0dR-op-y2C"/>
+                                    <constraint firstAttribute="trailing" secondItem="iSD-3H-uQ1" secondAttribute="trailing" constant="20" id="10k-Cs-qZy"/>
+                                    <constraint firstItem="GgL-Xd-fgH" firstAttribute="centerX" secondItem="yGa-dV-zQX" secondAttribute="centerX" id="4IQ-Qp-C2T"/>
+                                    <constraint firstItem="iSD-3H-uQ1" firstAttribute="top" secondItem="yGa-dV-zQX" secondAttribute="top" constant="10" id="b1c-Kx-JFF"/>
+                                    <constraint firstItem="GgL-Xd-fgH" firstAttribute="centerY" secondItem="yGa-dV-zQX" secondAttribute="centerY" id="fFj-ps-mcs"/>
+                                    <constraint firstItem="ODJ-67-JZt" firstAttribute="top" secondItem="yGa-dV-zQX" secondAttribute="top" constant="20" id="qii-Md-2na"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eCG-ra-wJm" secondAttribute="bottom" id="11V-HL-rhJ"/>
+                            <constraint firstItem="yGa-dV-zQX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="65m-kB-3za"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eCG-ra-wJm" secondAttribute="trailing" id="Cd7-w0-1ol"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yGa-dV-zQX" secondAttribute="bottom" constant="20" id="VDl-Dl-j6Z"/>
+                            <constraint firstItem="eCG-ra-wJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XI0-fn-OQS"/>
+                            <constraint firstItem="yGa-dV-zQX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="aIm-bT-RaY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yGa-dV-zQX" secondAttribute="trailing" constant="20" id="bWB-5c-Bwp"/>
+                            <constraint firstItem="eCG-ra-wJm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cUa-oN-M8Q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Improse Logo light bulb.png" width="284" height="315"/>
+    </resources>
 </document>
