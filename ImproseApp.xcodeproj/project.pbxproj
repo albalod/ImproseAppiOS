@@ -14,7 +14,6 @@
 		0A2EC548246C8C9E001A418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EC547246C8C9E001A418F /* Assets.xcassets */; };
 		0A2EC54B246C8C9E001A418F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EC549246C8C9E001A418F /* LaunchScreen.storyboard */; };
 		0A2EC553246C8EE1001A418F /* Improse Logo light bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EC552246C8EE1001A418F /* Improse Logo light bulb.png */; };
-		0A2EC559246CC197001A418F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC558246CC197001A418F /* HomePage.swift */; };
 		0A2EC56124759220001A418F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC56024759220001A418F /* LoginVC.swift */; };
 		0A2EC56324759AA6001A418F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EC56224759AA6001A418F /* GoogleService-Info.plist */; };
 		0A2EC5652475A64D001A418F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC5642475A64D001A418F /* HomeScreen.swift */; };
@@ -25,6 +24,7 @@
 		0A2EC56F2477CEEB001A418F /* SuggestDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC56E2477CEEB001A418F /* SuggestDetailVC.swift */; };
 		0A2EC571247A04DD001A418F /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC570247A04DD001A418F /* GamesVC.swift */; };
 		0A2EC573247A04F8001A418F /* GamesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC572247A04F8001A418F /* GamesDetailVC.swift */; };
+		0A2EC576247A123E001A418F /* StatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC575247A123E001A418F /* StatVC.swift */; };
 		E596862E5C60613BEB774286 /* Pods_ImproseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A14095F5EBDFC3EA28D624 /* Pods_ImproseApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,6 @@
 		0A2EC54A246C8C9E001A418F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A2EC54C246C8C9E001A418F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2EC552246C8EE1001A418F /* Improse Logo light bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Improse Logo light bulb.png"; sourceTree = "<group>"; };
-		0A2EC558246CC197001A418F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		0A2EC56024759220001A418F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0A2EC56224759AA6001A418F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A2EC5642475A64D001A418F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		0A2EC56E2477CEEB001A418F /* SuggestDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestDetailVC.swift; sourceTree = "<group>"; };
 		0A2EC570247A04DD001A418F /* GamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
 		0A2EC572247A04F8001A418F /* GamesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesDetailVC.swift; sourceTree = "<group>"; };
+		0A2EC575247A123E001A418F /* StatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatVC.swift; sourceTree = "<group>"; };
 		23A14095F5EBDFC3EA28D624 /* Pods_ImproseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImproseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AEAA61C0D18D12711C3331 /* Pods-ImproseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImproseApp.debug.xcconfig"; path = "Target Support Files/Pods-ImproseApp/Pods-ImproseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F4ACC4EA59D6EE78A15DAC29 /* Pods-ImproseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImproseApp.release.xcconfig"; path = "Target Support Files/Pods-ImproseApp/Pods-ImproseApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +96,6 @@
 				0A2EC547246C8C9E001A418F /* Assets.xcassets */,
 				0A2EC549246C8C9E001A418F /* LaunchScreen.storyboard */,
 				0A2EC54C246C8C9E001A418F /* Info.plist */,
-				0A2EC558246CC197001A418F /* HomePage.swift */,
 				0A2EC56024759220001A418F /* LoginVC.swift */,
 				0A2EC5642475A64D001A418F /* HomeScreen.swift */,
 				0A2EC56624778236001A418F /* EventDetailVC.swift */,
@@ -106,6 +105,7 @@
 				0A2EC56E2477CEEB001A418F /* SuggestDetailVC.swift */,
 				0A2EC570247A04DD001A418F /* GamesVC.swift */,
 				0A2EC572247A04F8001A418F /* GamesDetailVC.swift */,
+				0A2EC575247A123E001A418F /* StatVC.swift */,
 			);
 			path = ImproseApp;
 			sourceTree = "<group>";
@@ -250,11 +250,11 @@
 				0A2EC573247A04F8001A418F /* GamesDetailVC.swift in Sources */,
 				0A2EC53F246C8C9D001A418F /* AppDelegate.swift in Sources */,
 				0A2EC56724778236001A418F /* EventDetailVC.swift in Sources */,
+				0A2EC576247A123E001A418F /* StatVC.swift in Sources */,
 				0A2EC5652475A64D001A418F /* HomeScreen.swift in Sources */,
 				0A2EC56D2477CAF7001A418F /* SuggestionsVC.swift in Sources */,
 				0A2EC541246C8C9D001A418F /* SceneDelegate.swift in Sources */,
 				0A2EC56F2477CEEB001A418F /* SuggestDetailVC.swift in Sources */,
-				0A2EC559246CC197001A418F /* HomePage.swift in Sources */,
 				0A2EC571247A04DD001A418F /* GamesVC.swift in Sources */,
 				0A2EC56124759220001A418F /* LoginVC.swift in Sources */,
 			);

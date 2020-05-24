@@ -68,7 +68,7 @@ class SuggestionsVC: UITableViewController{
         }
         alertController.addAction(createAction)
         
-        let deleteAction = UIAlertAction(title: self.isDeleting ? "Stop Deleting" : "Delete suggestions", style: .default) { (action ) in
+        let deleteAction = UIAlertAction(title: self.isDeleting ? "Stop deleting" : "Delete suggestions", style: .default) { (action ) in
             self.isDeleting = !self.isDeleting
             self.tableView.setEditing(self.isDeleting, animated: true)
         }

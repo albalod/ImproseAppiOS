@@ -43,7 +43,9 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
     let detailSegueID = "DetailSegueHome"
     let attendSegue = "AttendSegue"
     let suggestSegue = "SuggestSegue"
-    
+    let gameSegue = "GamesSegue"
+    let statSegue = "StatsSegue"
+
     var eventListener: ListenerRegistration!
     var authLH : AuthStateDidChangeListenerHandle!
     @IBOutlet var eventTable: UITableView!
@@ -65,6 +67,10 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
         eventTable.delegate = self
         eventTable.dataSource = self
         startListening()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: UIBarButtonItem.Style.plain, target: self, action: #selector(showMenu))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: UIBarButtonItem.Style.plain, target: self, action: #selector(showChange))
     }
     
     func startListening(){
@@ -135,12 +141,12 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
         alertController.addAction(meetingAction)
         
         let gameAction = UIAlertAction(title: "Games List", style: .default) { (action ) in
-            
+            self.performSegue(withIdentifier: self.gameSegue, sender: nil)
         }
         alertController.addAction(gameAction)
         
         let statsAction = UIAlertAction(title: "View Stats", style: .default) { (action ) in
-            
+            self.performSegue(withIdentifier: self.statSegue, sender: nil)
         }
         alertController.addAction(statsAction)
         
@@ -211,7 +217,7 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
             print("Adding Event")
             
             if(nameTextField.text != ""){
-            self.eventRef.addDocument(data: ["name": nameTextField.text!, "desc": descTextField.text!, "createdBy":Auth.auth().currentUser!.uid])
+                self.eventRef.addDocument(data: ["name": nameTextField.text!, "desc": descTextField.text!, "createdBy":Auth.auth().currentUser!.uid])
             }
             
         }
