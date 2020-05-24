@@ -42,6 +42,7 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     let detailSegueID = "DetailSegueHome"
     let attendSegue = "AttendSegue"
+    let suggestSegue = "SuggestSegue"
     
     var eventListener: ListenerRegistration!
     var authLH : AuthStateDidChangeListenerHandle!
@@ -144,7 +145,7 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
         alertController.addAction(statsAction)
         
         let suggestAction = UIAlertAction(title: "Suggestions", style: .default) { (action ) in
-            
+            self.performSegue(withIdentifier: self.suggestSegue, sender: nil)
         }
         alertController.addAction(suggestAction)
         
@@ -209,7 +210,9 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
             let descTextField = alertController.textFields![1] as UITextField
             print("Adding Event")
             
+            if(nameTextField.text != ""){
             self.eventRef.addDocument(data: ["name": nameTextField.text!, "desc": descTextField.text!, "createdBy":Auth.auth().currentUser!.uid])
+            }
             
         }
         alertController.addAction(submitAction)
@@ -226,9 +229,6 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 print(events[indexPath.row].name)
                 (segue.destination as! EventDetailVC).eventRef = eventRef.document(events[indexPath.row].id)
             }
-        }
-        if(segue.identifier == attendSegue){
-            
         }
         
     }

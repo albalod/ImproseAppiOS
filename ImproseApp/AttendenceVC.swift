@@ -23,6 +23,8 @@ class AttendenceVC: UIViewController{
         style.backgroundColor = .init(red: CGFloat(0.5), green: CGFloat(0), blue: CGFloat(0), alpha: CGFloat(1))
         style.messageColor = .white
         
+        navigationItem.title = "Attendence"
+        
         meetingRef = Firestore.firestore().collection("Meetings")
         meeting = nil
         

@@ -177,6 +177,7 @@
                     <connections>
                         <outlet property="eventTable" destination="P7j-Wo-wtQ" id="NYi-Ee-d0f"/>
                         <segue destination="Lea-Ce-gL7" kind="show" identifier="AttendSegue" id="adc-w2-KWR"/>
+                        <segue destination="9zc-pO-KdC" kind="show" identifier="SuggestSegue" id="qoa-5f-vil"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJ1-tf-gIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -365,6 +366,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Yp-TX-ApL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1290" y="-589"/>
+        </scene>
+        <!--SuggestionsVC-->
+        <scene sceneID="eN1-qn-JYh">
+            <objects>
+                <tableViewController id="9zc-pO-KdC" customClass="SuggestionsVC" customModule="ImproseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sWg-1p-Gbj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuggestCell" id="Fjw-wg-k1k">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fjw-wg-k1k" id="rVI-Kz-YKH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="PhO-4O-X3F" kind="show" identifier="DetailSegueSuggest" id="97X-GC-hff"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9zc-pO-KdC" id="Ldy-PI-Uot"/>
+                            <outlet property="delegate" destination="9zc-pO-KdC" id="3EY-ch-cpa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="k0X-qS-Es2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npc-ud-tDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1290" y="2172"/>
+        </scene>
+        <!--Suggest DetailVC-->
+        <scene sceneID="Mar-8Q-50H">
+            <objects>
+                <viewController id="PhO-4O-X3F" customClass="SuggestDetailVC" customModule="ImproseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4WH-Oj-o72">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kY-Yc-eA9">
+                                <rect key="frame" x="107" y="108" width="200" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aPZ-t3-da7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contentLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMS-bH-ptq">
+                                <rect key="frame" x="57" y="166.5" width="300" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="FVG-0S-lT4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nMS-bH-ptq" firstAttribute="centerX" secondItem="OEe-yx-ffG" secondAttribute="centerX" id="Flk-pH-5o7"/>
+                            <constraint firstItem="nMS-bH-ptq" firstAttribute="top" secondItem="7kY-Yc-eA9" secondAttribute="bottom" constant="20" id="IDQ-F7-NL6"/>
+                            <constraint firstItem="nMS-bH-ptq" firstAttribute="top" secondItem="7kY-Yc-eA9" secondAttribute="bottom" constant="20" id="OcM-GV-zcx"/>
+                            <constraint firstItem="7kY-Yc-eA9" firstAttribute="centerX" secondItem="OEe-yx-ffG" secondAttribute="centerX" id="lmr-kK-IUR"/>
+                            <constraint firstItem="7kY-Yc-eA9" firstAttribute="top" secondItem="OEe-yx-ffG" secondAttribute="top" constant="20" id="q4W-Cw-Rfm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OEe-yx-ffG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oob-Jo-ccF"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="nMS-bH-ptq" id="GoD-hg-KxM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4A-4b-8tE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="2172"/>
         </scene>
     </scenes>
     <resources>

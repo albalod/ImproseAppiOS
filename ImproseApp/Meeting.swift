@@ -2,7 +2,7 @@
 //  Meeting.swift
 //  ImproseApp
 //
-//  Created by CSSE Department on 5/22/20.
+//Users/csse/Documents/ImproseApp/ImproseApp/  Created by CSSE Department on 5/22/20.
 //  Copyright © 2020 Rose-Hulman CSSE484. All rights reserved.
 //
 
