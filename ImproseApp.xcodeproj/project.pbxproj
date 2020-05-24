@@ -25,6 +25,8 @@
 		0A2EC571247A04DD001A418F /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC570247A04DD001A418F /* GamesVC.swift */; };
 		0A2EC573247A04F8001A418F /* GamesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC572247A04F8001A418F /* GamesDetailVC.swift */; };
 		0A2EC576247A123E001A418F /* StatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC575247A123E001A418F /* StatVC.swift */; };
+		0A2EC578247A67C1001A418F /* MeetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC577247A67C1001A418F /* MeetingVC.swift */; };
+		0A2EC57A247A69A5001A418F /* MeetingDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EC579247A69A5001A418F /* MeetingDetailVC.swift */; };
 		E596862E5C60613BEB774286 /* Pods_ImproseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A14095F5EBDFC3EA28D624 /* Pods_ImproseApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		0A2EC570247A04DD001A418F /* GamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
 		0A2EC572247A04F8001A418F /* GamesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesDetailVC.swift; sourceTree = "<group>"; };
 		0A2EC575247A123E001A418F /* StatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatVC.swift; sourceTree = "<group>"; };
+		0A2EC577247A67C1001A418F /* MeetingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingVC.swift; sourceTree = "<group>"; };
+		0A2EC579247A69A5001A418F /* MeetingDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDetailVC.swift; sourceTree = "<group>"; };
 		23A14095F5EBDFC3EA28D624 /* Pods_ImproseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImproseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AEAA61C0D18D12711C3331 /* Pods-ImproseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImproseApp.debug.xcconfig"; path = "Target Support Files/Pods-ImproseApp/Pods-ImproseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F4ACC4EA59D6EE78A15DAC29 /* Pods-ImproseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImproseApp.release.xcconfig"; path = "Target Support Files/Pods-ImproseApp/Pods-ImproseApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				0A2EC570247A04DD001A418F /* GamesVC.swift */,
 				0A2EC572247A04F8001A418F /* GamesDetailVC.swift */,
 				0A2EC575247A123E001A418F /* StatVC.swift */,
+				0A2EC577247A67C1001A418F /* MeetingVC.swift */,
+				0A2EC579247A69A5001A418F /* MeetingDetailVC.swift */,
 			);
 			path = ImproseApp;
 			sourceTree = "<group>";
@@ -244,12 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2EC57A247A69A5001A418F /* MeetingDetailVC.swift in Sources */,
 				0A2EC543246C8C9D001A418F /* ViewController.swift in Sources */,
 				0A2EC56B2477B0DD001A418F /* Meeting.swift in Sources */,
 				0A2EC56924778D40001A418F /* AttendenceVC.swift in Sources */,
 				0A2EC573247A04F8001A418F /* GamesDetailVC.swift in Sources */,
 				0A2EC53F246C8C9D001A418F /* AppDelegate.swift in Sources */,
 				0A2EC56724778236001A418F /* EventDetailVC.swift in Sources */,
+				0A2EC578247A67C1001A418F /* MeetingVC.swift in Sources */,
 				0A2EC576247A123E001A418F /* StatVC.swift in Sources */,
 				0A2EC5652475A64D001A418F /* HomeScreen.swift in Sources */,
 				0A2EC56D2477CAF7001A418F /* SuggestionsVC.swift in Sources */,

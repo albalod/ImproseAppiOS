@@ -45,6 +45,7 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
     let suggestSegue = "SuggestSegue"
     let gameSegue = "GamesSegue"
     let statSegue = "StatsSegue"
+    let meetingSegue = "MeetingSegue"
 
     var eventListener: ListenerRegistration!
     var authLH : AuthStateDidChangeListenerHandle!
@@ -136,7 +137,7 @@ class HomeScreen: UIViewController, UITableViewDelegate, UITableViewDataSource{
         alertController.addAction(attendAction)
         
         let meetingAction = UIAlertAction(title: "Meeting Records", style: .default) { (action ) in
-            
+            self.performSegue(withIdentifier: self.meetingSegue, sender: nil)
         }
         alertController.addAction(meetingAction)
         
